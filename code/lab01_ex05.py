@@ -1,6 +1,6 @@
-name = input()
-m = len(name.replace('  ', ''))
-nam = name.strip().split()
+name = input().strip()
+nam = name.split()
+m = len(''.join(nam))+2
 n = []
 for i in nam:
     a = i[0]
