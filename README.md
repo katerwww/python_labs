@@ -41,9 +41,9 @@ print(f"{hours} : {ost_min:02d}")
 ![04](./images/lab01_ex04.png)
 ## задание 5
 ```
-name = input()
-m = len(name.replace('  ', ''))
-nam = name.strip().split()
+name = input().strip()
+nam = name.split()
+m = len(''.join(nam))+2
 n = []
 for i in nam:
     a = i[0]
