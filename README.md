@@ -1,19 +1,24 @@
-# лабораторная работа 1
+# __Лабораторная работа 1__
 ## задание 1
-![a = input()
+```
+a = input()
 b = int(input())
 c = b + 1
 print(f"Привет, {a}! Через год тебе будет {c}.")
-](./images/lab01_ex01.png)
+```
+(./images/lab01_ex01.png)
 ## задание 2
-![a = float(input())
+```
+a = float(input())
 b = float(input())
 summ = a + b
 avg = round((a + b)/2, 2)
 print(f"sum={summ}; avg={avg}")
-](./images/lab01_ex02.png)
+```
+(./images/lab01_ex02.png)
 ## задание 3
-![price = float(input())
+```
+price = float(input())
 discount = float(input())
 vat = float(input())
 
@@ -24,15 +29,19 @@ total = round(base + vat_amount, 2)
 print(f"База после скидки: {base} ₽")
 print(f"НДС: {vat_amount} ₽")
 print(f"Итого к оплате: {total} ₽")
-](./images/lab01_ex03.png)
+```
+(./images/lab01_ex03.png)
 ## задание 4
-![min = int(input())
+```
+min = int(input())
 hours = min//60
 ost_min = min%60
 print(f"{hours} : {ost_min}")
-](./images/lab01_ex04.png)
+```
+(./images/lab01_ex04.png)
 ## задание 5
-![name = input()
+```
+name = input()
 m = len(name.replace('  ', ''))
 nam = name.strip().split()
 n = []
@@ -42,4 +51,5 @@ for i in nam:
 h = ''.join(n)
 print(f"Инициалы: {h}.")
 print(f"Длина (символов): {m}")
-](./images/lab01_ex05.png)
+```
+(./images/lab01_ex05.png)
