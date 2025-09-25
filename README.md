@@ -13,9 +13,9 @@ a = float(input())
 b = float(input())
 summ = a + b
 avg = round((a + b)/2, 2)
-![02]print(f"sum={summ}; avg={avg}")
+print(f"sum={summ}; avg={avg}")
 ```
-(./images/lab01_ex02.png)
+![02](./images/lab01_ex02.png)
 ## задание 3
 ```
 price = float(input())
