@@ -36,7 +36,7 @@ print(f"Итого к оплате: {total} ₽")
 min = int(input())
 hours = min//60
 ost_min = min%60
-print(f"{hours} : {ost_min}")
+print(f"{hours} : {ost_min:02d}")
 ```
 ![04](./images/lab01_ex04.png)
 ## задание 5
