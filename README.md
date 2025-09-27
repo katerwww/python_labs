@@ -6,7 +6,7 @@ b = int(input())
 c = b + 1
 print(f"Привет, {a}! Через год тебе будет {c}.")
 ```
-![01](./images/lab01_ex01.png)
+![01](./images/lab01/ab01_ex01.png)
 ## задание 2
 ```
 a = float(input())
