@@ -6,7 +6,7 @@ b = int(input())
 c = b + 1
 print(f"Привет, {a}! Через год тебе будет {c}.")
 ```
-![01](./images/lab01/ab01_ex01.png)
+![01](./images/lab01/lab01_ex01.png)
 ## задание 2
 ```
 a = float(input())
@@ -15,7 +15,7 @@ summ = a + b
 avg = round((a + b)/2, 2)
 print(f"sum={summ}; avg={avg}")
 ```
-![02](./images/lab01_ex02.png)
+![02](./images/lab01/lab01_ex02.png)
 ## задание 3
 ```
 price = float(input())
@@ -30,7 +30,7 @@ print(f"База после скидки: {base} ₽")
 print(f"НДС: {vat_amount} ₽")
 print(f"Итого к оплате: {total} ₽")
 ```
-![03](./images/lab01_ex03.png)
+![03](./images/lab01/lab01_ex03.png)
 ## задание 4
 ```
 min = int(input())
@@ -38,7 +38,7 @@ hours = min//60
 ost_min = min%60
 print(f"{hours} : {ost_min:02d}")
 ```
-![04](./images/lab01_ex04.png)
+![04](./images/lab01/lab01_ex04.png)
 ## задание 5
 ```
 name = input().strip()
@@ -52,4 +52,4 @@ h = ''.join(n)
 print(f"Инициалы: {h}.")
 print(f"Длина (символов): {m}")
 ```
-![05](./images/lab01_ex05.png)
+![05](./images/lab01/lab01_ex05.png)
