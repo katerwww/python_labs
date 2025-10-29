@@ -159,3 +159,84 @@ print(format_record(("  сидорова  анна   сергеевна ", "ABB-
 
 ```
 ![03](./images/lab02/lab02_ex03.png)
+
+# __Лабораторная работа 3__
+## normalize
+```
+def normalize(text: str, *, casefold: bool = True, yo2e: bool = True) -> str:
+    text = text.casefold() 
+    if yo2e:
+        text = text.replace('ё', 'е').replace('Ё', 'Е')
+    text = text.replace('\t', ' ').replace('\r', ' ').replace('\n', ' ')
+    text = " ".join(text.split()) 
+    text = text.strip() 
+    return text
+
+print(normalize("ПрИвЕт\nМИр\t")) 
+print(normalize("ёжик, Ёлка"))
+print(normalize("Hello\r\nWorld"))
+print(normalize("  двойные   пробелы  "))
+```
+![01](./images/lab03/lab03_nor.png)
+
+## tokenize
+```
+import re
+def tokenize(text: str) -> list[str]:
+    return re.findall(r'\w+(?:-\w+)*', text)  
+
+print(tokenize("привет мир"))
+print(tokenize("hello,world!!!"))
+print(tokenize("по-настоящему круто"))
+print(tokenize("2025 год"))
+print(tokenize("emoji 😀 не слово"))
+
+```
+![02](./images/lab03/lab03_tok.png)
+
+## count_freq + top_n
+``` 
+def count_freq(tokens: list[str]) -> dict[str, int]:
+    c = {}  
+    for w in tokens:
+        cu = c.get(w, 0) 
+        c[w] = cu + 1
+    return c
+def top_n(freq: dict[str, int], n: int = 5) -> list[tuple[str, int]]:
+    t = []
+    for w, count in freq.items():
+        t.append((-count, w))
+    t.sort()
+    result = []
+    for neg_count, w in t:
+        result.append((w, -neg_count))
+    return result[:n]
+tok = ["a", "b", "a", "c", "b", "a"]
+freq = count_freq(tok)
+print(top_n(freq, n=2))
+tok_2 = ["bb", "aa", "bb", "aa", "cc"]
+freq_2 = count_freq(tok_2)
+print(top_n(freq_2, n=2))
+
+```
+![03](./images/lab03/lab03_cou+top.png)
+
+## text_stats
+``` 
+import sys
+import re
+from lib.text import normalize, tokenize, count_freq, top_n
+
+a = str(input())
+n =normalize(a) 
+allwords = tokenize(n) 
+uw = count_freq(allwords) 
+top = top_n(uw,5) 
+print(f'Всего слов: {len(allwords)}') 
+print(f"Уникальных слов: {len(uw)}")
+print("Топ-5:")
+for y in top:
+    print(y[0] + ': ' + str(y[1]))
+
+```
+![04](./images/lab03/lab03_text_stats.png)
