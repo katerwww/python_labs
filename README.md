@@ -391,10 +391,10 @@ csv_to_json(r"C:\Users\lezgi\Desktop\python_labs\data\samples\people.csv",r"C:\U
 
 json_to_csv( r"C:\Users\lezgi\Desktop\python_labs\data\samples\people.json",  r"C:\Users\lezgi\Desktop\python_labs\data\out\people_from_csv.csv" )
 ```
-![01](.images/lab05/a_out_csv.png)
-![02](.images/lab05/a_out_json.png)
-![03](.images/lab05/a_sam_csv.png)
-![04](.images/lab05/a_sam_json.png)
+![01](./images/lab05/a_out_csv.png)
+![02](./images/lab05/a_out_json.png)
+![03](./images/lab05/a_sam_csv.png)
+![04](./images/lab05/a_sam_json.png)
 
 ## Задание B — CSV → XLSX
 ``` 
@@ -436,5 +436,5 @@ def csv_to_xlsx(csv_path: str, xlsx_path: str) -> None:
     wb.save(xlsx_path)
 csv_to_xlsx(r"C:\Users\Home\lab_python\lab_python-2\data\samples\cities.csv", r"C:\Users\Home\lab_python\lab_python-2\data\out\people.xlsx")    
 ```
-![01](.images/lab05/b_sam.png)
-![02](.images/lab05/b_out.png)
+![01](./images/lab05/b_sam.png)
+![02](./images/lab05/b_out.png)
