@@ -1,6 +1,9 @@
 import re
+
+
 def tokenize(text: str) -> list[str]:
-    return re.findall(r'\w+(?:-\w+)*', text)  
+    return re.findall(r"\w+(?:-\w+)*", text)
+
 
 print(tokenize("привет мир"))
 print(tokenize("hello,world!!!"))
