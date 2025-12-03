@@ -826,6 +826,6 @@ if __name__ == "__main__":
         print(student)
     
 ```
-![02](./images/lab08/serialliz.png)
+![02](./images/lab08/seriallize.png)
 ![03](./images/lab08/input.png)
 ![04](./images/lab08/output.png)
